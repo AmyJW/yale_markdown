@@ -20,6 +20,8 @@ for(i in pkgs){
   }
 }
 x<-lapply(pkgs, library, character.only = TRUE)
+install.packages("lubridate")
+library(lubridate)
 ```
 
 # Purpose
@@ -85,6 +87,22 @@ emiss_gdp_gg <- gap_data %>%
   labs(x = "Mean Gross Domestic Product",
        y = "Mean Carbon Dioxide Emissions")
 ggplotly(emiss_gdp_gg)
+
 ```
 
+# Playing around with Markdown
+
+## A bulleted list 
+
+1. ice cream 
+2. blackberries 
+3. ice cream + blackberries
+
+## A link 
+
+[Data-Driven Yale](http://www.datadriven.yale.edu/)
+
+## An animated gif
+
+![animated gif](https://mir-s3-cdn-cf.behance.net/project_modules/disp/f037c454933123.596f84ed7bc86.gif)
 
